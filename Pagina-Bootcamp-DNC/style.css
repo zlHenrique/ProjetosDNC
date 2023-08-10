@@ -6,17 +6,26 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+#menu {
+    display: flex;
+    width: 55%;
+    justify-content: start;
+    gap: 50px;
+    align-items: center;
+    margin-left: 4%;
+}
+
 #principal {
     width: 100%;
     height: 100px;
-    background-color: #303030;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-between;
+    background-color: #303030;
+    border-bottom: 1px solid #BABABA;
 }
 
-#principal div a{
-    margin: 30px;
+#principal div a{        
     text-decoration: none;
     color: #FFF;
     font-size: 25px;
@@ -25,12 +34,17 @@ body {
     line-height: normal;
 }
 
+#principal div a:hover {
+    color: #CCCCCC;
+}
+
 #principal button {
     width: 80px;
     height: 39px;
-    flex-shrink: 0;
-    background: #0C70F2;
+    margin-right: 4%;
+    cursor: pointer;
     border: none;
+    background: #0C70F2;
     box-shadow: 3px 2px 4px 0px rgba(12, 112, 242, 0.25);
     color: #FFF;
     font-size: 20px;
@@ -38,3 +52,5 @@ body {
     font-weight: 600;
     line-height: normal;
 }
+
+

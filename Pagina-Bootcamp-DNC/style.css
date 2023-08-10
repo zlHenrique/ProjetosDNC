@@ -1,9 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+:root {
+    /* Cores Padrão */
+    --azul-dnc: #0c70f2;
+    --preto-dnc: #303030;
+    --cinza-hover: #c9c9c9;
+
+    /* Fonte Padrão */
+    --fonte-padrao: 'Inter';
+}
+
 
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Inter', sans-serif;
+    background: linear-gradient(180deg, rgba(12, 112, 242, 0.50) 19.91%, rgba(12, 112, 242, 0.00) 24.84%), #303030;
+    background-repeat: no-repeat;
+}
+
+/* Menu de Navegação Principal */
+#principal {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--preto-dnc);
+    border-bottom: 1px solid #BABABA;
 }
 
 #menu {
@@ -15,19 +38,10 @@ body {
     margin-left: 4%;
 }
 
-#principal {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #303030;
-    border-bottom: 1px solid #BABABA;
-}
-
 #principal div a{        
     text-decoration: none;
-    color: #FFF;
+    color: white;
+    font-family: var(--fonte-padrao);
     font-size: 25px;
     font-style: normal;
     font-weight: 600;
@@ -35,7 +49,7 @@ body {
 }
 
 #principal div a:hover {
-    color: #CCCCCC;
+    color: var(--cinza-hover);
 }
 
 #principal button {
@@ -44,13 +58,46 @@ body {
     margin-right: 4%;
     cursor: pointer;
     border: none;
-    background: #0C70F2;
+    background: var(--azul-dnc);
     box-shadow: 3px 2px 4px 0px rgba(12, 112, 242, 0.25);
-    color: #FFF;
+    color: white;
+    font-family: var(--fonte-padrao);
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
 }
 
+/* Header */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 
+header {
+    color: white;
+    font-family: var(--fonte-padrao);
+    text-align: center;
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-size: 80px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+header .mark {
+    background-color: black;
+    font-weight: 700;
+    font-weight: bold;
+    padding: 5px;
+}

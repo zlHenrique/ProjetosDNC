@@ -3,7 +3,7 @@ const hora = document.getElementById('hora')
 const minuto = document.getElementById('minuto')
 const segundo = document.getElementById('segundo')
 
-const lancamento = "28 oct 2023"
+const lancamento = "1 dec 2023"
 
 function countDown(){
     const dataLancamento = new Date(lancamento)
@@ -14,10 +14,10 @@ function countDown(){
     const finalMinutos = Math.floor(totalSegundos / 60) % 60
     const finalSegundos = Math.floor(totalSegundos) % 60
 
-    dia.innerHTML = formatoTempo(finalDias)
-    hora.innerHTML = formatoTempo(finalHoras)
-    minuto.innerHTML = formatoTempo(finalMinutos)
-    segundo.innerHTML = formatoTempo(finalSegundos)
+    dia.innerHTML = formatoTempo(`${finalDias}D`)
+    hora.innerHTML = formatoTempo(`${finalHoras}H`)
+    minuto.innerHTML = formatoTempo(`${finalMinutos}M`)
+    segundo.innerHTML = formatoTempo(`${finalSegundos}S`)
 }
 
 function formatoTempo(tempo) {

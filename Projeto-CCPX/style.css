@@ -33,7 +33,7 @@ header {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .info-apresentation h2 {
@@ -85,6 +85,7 @@ header {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 
@@ -112,7 +113,6 @@ header {
     line-height: normal;
     cursor: pointer;
 }
-
 
 .cards {
     padding-left: 20px;

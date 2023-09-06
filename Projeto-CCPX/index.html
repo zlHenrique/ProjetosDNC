@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="countdown.js" defer></script>
     <script src="script.js" defer></script>
     <title>Projeto CCPX</title>
 </head>
@@ -53,10 +54,10 @@
             <div>
                 <p>AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</p>
             </div> 
-            <img src="imagens/card1.png" alt="">
-            <img src="imagens/card2.png" alt="">
-            <img src="imagens/card3.png" alt="">
-            <img src="imagens/card4.png" alt="">
+                <img src="imagens/card1.png" onmouseover="highlightCard('#qui')" onmouseout="highlightCard('#qui')" id="qui" alt="">
+                <img src="imagens/card2.png" onmouseover="highlightCard('#sex')" onmouseout="highlightCard('#sex')" id="sex" alt="">
+                <img src="imagens/card3.png" onmouseover="highlightCard('#sab')" onmouseout="highlightCard('#sab')" id="sab" alt="">
+                <img src="imagens/card4.png" onmouseover="highlightCard('#dom')" onmouseout="highlightCard('#dom')" id="dom" alt="">
         </div>
         <div>
             <button>GARANTA O SEU!</button>

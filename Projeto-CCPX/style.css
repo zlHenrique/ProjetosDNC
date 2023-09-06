@@ -116,6 +116,7 @@ header {
 
 .cards {
     padding-left: 20px;
+    opacity: 1;
 }
 
 .cards p {
@@ -128,4 +129,9 @@ header {
     line-height: normal;
     padding-left: 19px;
     margin-bottom: 20px;
+}
+
+.card-highlight {
+    transform: scale(1.1);
+    transition-duration: 0.4s;
 }

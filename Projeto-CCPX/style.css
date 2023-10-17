@@ -5,11 +5,17 @@
 }
 
 header {
+    display: flex;
     width: 100vw;
     background-color: #FFD900;
-    padding-left: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-left: 2vw;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+    align-items: center;
+}
+
+header img {
+    width: 15vw;
 }
 
 .info-container {
@@ -19,9 +25,9 @@ header {
 }
 
 .info-apresentation {
-    width: 800px;
+    width: 50vw;
     background-color: #514988;
-    padding: 40px 40px 69px 40px;
+    padding: 1vw 3vw 0vw 3vw;
     text-align: center;
     justify-content: center;
 }
@@ -30,28 +36,28 @@ header {
     color: #F3C61F;
     text-align: center;
     font-family: Verdana;
-    font-size: 70px;
+    font-size: 4vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-bottom: 10px;
+    margin-bottom: 1vw;
 }
 
 .info-apresentation h2 {
     color: #FFF;
     font-family: Verdana;
-    font-size: 30px;
+    font-size: 2vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-bottom: 50px;
+    margin-bottom: 1.6vw;
 }
 
 .info-apresentation p {
     color: #FFF;
     text-align: center;
     font-family: Verdana;
-    font-size: 29px;
+    font-size: 1.5vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -60,7 +66,6 @@ header {
 .info-countdown {
     display: flex;
     flex-direction: column;
-    padding-top: 10px;
     justify-content: end;
     text-align: center;
 }
@@ -69,29 +74,29 @@ header {
     display: flex;
     color: #514988;
     justify-content: center;
-    column-gap: 50px;
+    column-gap: 3vw;
     text-align: center;
     font-family: Verdana;
-    font-size: 45px;
+    font-size: 2vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    padding: 1vw;
 }
 
 .p-countdown {
     color: #E33881;
     text-align: center;
     font-family: Verdana;
-    font-size: 30px;
+    font-size: 1.5vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 1.5vw;
 }
 
 .cards-container {
-    width: 100%;
+    width: 100vw;
     display: grid;
     grid-auto-flow: column;
     align-items: center;
@@ -100,15 +105,15 @@ header {
 }
 
 .cards-container button {
-    width: 596px;
-    height: 148px;
+    width: 25vw;
+    height: 15vh;
     flex-shrink: 0;
     border-radius: 20px;
     background: #514988;
     color: #FFF;
     text-align: center;
     font-family: Verdana;
-    font-size: 42px;
+    font-size: 2.0vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -116,18 +121,23 @@ header {
 }
 
 .cards {
-    padding-left: 20px;
+    display: grid;
+    justify-content: center;
+    width: 57vw;
+}
+
+.cards img {
+    width: 13vw;
 }
 
 .cards p {
     color: #F3C61F;
-    text-align: start;
+    text-align: center;
     font-family: Verdana;
-    font-size: 27px;
+    font-size: 1.6vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    padding-left: 19px;
     margin-bottom: 20px;
 }
 

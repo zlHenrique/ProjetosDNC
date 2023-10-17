@@ -5,6 +5,7 @@
 }
 
 header {
+    width: 100vw;
     background-color: #FFD900;
     padding-left: 50px;
     padding-top: 50px;
@@ -12,7 +13,7 @@ header {
 }
 
 .info-container {
-    width: 100%;
+    width: 100vw;
     display: grid;
     grid-auto-flow: column;
 }
@@ -116,7 +117,6 @@ header {
 
 .cards {
     padding-left: 20px;
-    opacity: 1;
 }
 
 .cards p {
@@ -134,4 +134,94 @@ header {
 .card-highlight {
     transform: scale(1.1);
     transition-duration: 0.4s;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    header {
+        width: 100vw;
+        padding: 0;
+    }
+
+    header img {
+        width: 50vw;
+        margin: 10px 0px 10px 10px
+    }
+
+    .info-container {
+        width: 100vw;
+        grid-auto-flow: row;
+    }
+
+    .info-apresentation {
+        width: 100vw;
+        padding: 0;
+    }
+
+    .info-apresentation h1 {
+        font-size: 10vw;
+        margin: 10px 0px 10px 0px;
+    }
+
+    .info-apresentation h2 {
+        font-size: 7vw;
+        margin: 0px 0px 10px 0px;
+    }
+
+    .info-apresentation p {
+        font-size: 5vw;
+        word-break: break-word;
+        margin: 0px 10px 10px 10px;
+    }
+
+    .timer {
+        font-size: 5vw;
+        column-gap: 7vw;
+        margin-top: 10px;
+    }
+
+    .p-countdown {
+        font-size: 6vw;
+        margin: 10px 10px 10px 10px;
+    }
+
+    .cards-container {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards-img {
+        display: grid; 
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 20px 0px; 
+        justify-items: center;
+        align-items: center;
+    }
+
+    .cards-img img{
+        width: 50vw;
+    }
+
+    .cards {
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    .cards p {
+        text-align: center;
+        padding: 10px;
+        font-size: 6vw;
+        word-break: break-all;
+    }
+
+    .cards-container button {
+        margin-top: 20px;
+        width: 85vw;
+        height: 10vh;
+        font-size: 7vw;
+    }
 }
